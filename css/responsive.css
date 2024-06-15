@@ -1,0 +1,308 @@
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v8.4.14,
+* Autoprefixer: v10.4.7
+* Browsers: last 4 version
+*/
+
+@media screen and (max-width:1400px) {
+    .container{
+        max-width: 1200px;
+    }
+    .home{
+        height: 73rem;
+    }
+    .home__image{
+        width: 45rem;
+        height: 45rem;
+    }
+    .service__title{
+        max-width: 30rem;
+    }
+    .resume-list__item::after{
+        max-width: 35rem;
+    }
+    
+}
+
+
+@media screen and (max-width:1200px) {
+    .container{
+        max-width: 992px;
+    }
+    .home{
+        height: 65rem;
+    }
+    .home__image{
+        width: 38rem;
+        height: 38rem;
+    }
+    .resume-list__item::after{
+        max-width: 30rem;
+    }
+    .resume-content__description{
+        font-size: 1.4rem;
+    }
+    .contact{
+        max-width: 60%;
+    } 
+}
+
+
+@media screen and (max-width:992px) {
+    .container{
+        max-width: 768px;
+    }
+    :root.dark-mode .home{
+        background-image: none;
+    }
+    .menu__item{
+        width: 8rem;
+    }
+    .home{
+        height: auto;
+        background: none;
+    }
+    .home .row{
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: reverse;
+            -ms-flex-direction: column-reverse;
+                flex-direction: column-reverse;
+    }
+    .home__title{
+        font-size: 4.5rem;
+    }
+    .home__content{
+        text-align: center;
+        margin-top: 5rem;
+    }
+    .home__links{
+        -webkit-box-pack: center;
+            -ms-flex-pack: center;
+                justify-content: center;
+    }
+    .home__image{
+        width: 36rem;
+        height:36rem;
+        margin: 0 auto;
+    }
+    .about{
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+                flex-direction: column;
+    }
+    .about__banner{
+        width: 100%;
+    }
+    .about__content{
+       width: 100%;
+       padding: 2rem 4rem;
+    }
+    .resume-list{
+       min-height: auto;
+       -webkit-box-orient:horizontal;
+       -webkit-box-direction:normal;
+           -ms-flex-direction:row;
+               flex-direction:row;
+       padding: 0;
+       -ms-flex-wrap: wrap;
+           flex-wrap: wrap;
+       -webkit-box-pack:start;
+           -ms-flex-pack:start;
+               justify-content:flex-start;
+       -webkit-box-shadow: none;
+               box-shadow: none;
+       height: auto;
+       margin-bottom: 3rem;
+    }
+    .resume-list::before{
+        display: none;
+    }
+    .resume-list__item{
+       height: 5rem;
+       padding: 0 2rem;
+       border-radius: 5rem; 
+       background-color: var(--primary-color);
+    }
+    .resume-list__item::after{
+       display: none;
+    }
+    .resume-list__icon{
+        display: none;
+    }
+    .resume-content{
+        margin-left: 2rem;
+        padding-right: 0;
+    }
+    .portfolio-list{
+        gap: 1rem;
+        -webkit-box-pack: start;
+            -ms-flex-pack: start;
+                justify-content: flex-start;
+    }
+    .portfolio-list__item{
+        background-color: var(--primary-color);
+    }
+    .contact-map{
+        display: none;
+    }
+    .contact{
+        margin: 0 auto;
+    }
+}
+
+
+@media screen and (max-width:768px) {
+    .container{
+        max-width: 576px;
+    }
+    .menu{
+        padding: 0;
+        width: 100%;
+        height: 0;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+                flex-direction: column;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        right: 0;
+        gap:0;
+        background-color:var(--section-bg-color);
+        -webkit-transition: all 200ms ease-in;
+        -o-transition: all 200ms ease-in;
+        transition: all 200ms ease-in;
+        overflow: hidden;
+    }
+    .menu--open{
+        height: 35rem;
+    }
+    .menu__item{
+        width: 100%;
+    }
+    .nav__toggle-btn{
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+    }
+    .cover{
+        position: fixed;
+        top: 0;
+        bottom: 0;
+        right: 0;
+        left: 0;
+        background-color:#00000010;
+        opacity: 0;
+        z-index: 99;
+        display: none;
+    }
+    .cover--show{
+        opacity: 1;
+    }
+    .home{
+        padding-top: 4rem;
+    }
+    .home__image{
+        width: 34rem;
+        height: 34rem;
+        border-width: 1.5rem;
+    }
+    .service{
+        min-height: 35rem;
+    }
+    .service__title{
+        max-width: 20rem;
+    }
+    .contact{
+        max-width: 100%;
+    }
+    .footer__wrapper{
+        -ms-flex-wrap: wrap;
+            flex-wrap: wrap;
+        row-gap: 2rem;
+    }
+}
+
+
+@media screen and (max-width:576px) {
+    .container{
+        max-width: 100%;
+    }
+    *{
+        cursor: default !important;
+    }
+    .home__name{
+        font-size: 2.5rem;
+    }
+    .home__title{
+        font-size: 4rem;
+    }
+    .home__image{
+        width: 30rem;
+        height: 30rem;
+    }
+    .about__link{
+        width: 100%;
+    }
+    .about__content{
+        padding: 2rem;
+    }
+    .about__content-description{
+        margin-bottom: 4rem;
+        text-align: justify;
+    }
+    .service__title{
+        max-width:100%;
+    }
+    .resume-content{
+       padding:0 2rem;
+    }
+    .resume-content__title{
+        font-size: 1.7rem;
+    }
+    .resume-content__title::before{
+        left: -3.2rem;
+    }
+    .contact{
+        padding: 4rem 2rem;
+    }
+}
+
+
+@media screen and (max-width:440px) {
+    .home__name{
+        font-size: 2rem;
+    }
+    .home__title{
+        font-size: 3.3rem;
+    }
+    .home__link{
+        width: 100%;
+    }
+    .service__title{
+        max-width: 20rem;
+    }
+    .footer__copy{
+        font-size: 1.6rem;
+    }
+    .footer-menu__item,
+    .switch__btn {
+        width: 4rem;
+        height: 4rem;
+    }
+}
+
+@media screen and (max-width:350px) {
+    .home__image{
+        width: 100%;
+    }
+    .home__title{
+        font-size: 2.9rem;
+    }
+    .home__image{
+        width: 27rem;
+        height: 27rem;
+    }
+}
